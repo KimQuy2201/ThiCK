@@ -1,0 +1,43 @@
+
+
+XXX-XXX-00-0000	
+	re = /^[A-Z]{3}\-[A-Z]{3}\-\d{2}-\d{4}$/
+Ký tự đầu phải viết hoa
+	re = /^[A-Z][a-z]+(\s[A-Z][a-z]+)+$/;
+Định dạng gmail
+	re = /^[a-zA-Z0-9.\_\-]+@([a-zA-Z0-9])+.\w{3}$/;
+sdt 090-0000-000
+	re = /^090-\d{4}-\d{3}$/;
+	re = /^0\d{2}-\d{3}-\d{4}$/;
+	re = /^(84|0[3|5|7|8|9])+([0-9]{8})\b$/;
+	re = /^[0-9]\d{8}$/; (gom 9 chu so)
+in hoa tất cả
+	re = /^[A-Z][A-Z]+(\s[A-Z][A-Z]+)*$/g;
+
+
+name:  var re = /^[A-Z][a-z]+(\s[A-Z][a-z]+)+$/;
+mail: var re = /^[a-zA-Z0-9.\_\-]+@gmail.com$/;
+sdt: var re =  /^(84|0[3|5|7|8|9])+([0-9]{8})\b$/;
+tên đăng nhập :  ^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$
+cmnd :  var re = /^2214[0-9][0-9][0-9][0-9][0-9]*$/
+kt từ 1-0: re = /^[1-9]$|^[1-9][0-9]$|^(100)$/;
+
+-- Ktra Ho va Ten	  : re = /^[A-Z][a-z]+(\s[A-z][a-z]+)+$/; 	(vd: Tran Thanh) (Ho Ten)
+
+-- Ktra So Nguyen(1-100)  : re = /^[1-9]$|^[1-9][0-9]$|^(100)$/;
+
+-- Ktra Dia Chi		  : re = /^[0-9\/]+[\sA-Za-z]+/gm; 		(vd: 12 Phan Van Tri)
+
+-- Ktra So Dien Thoai	  : re = /^(0[3|5|7|8|9][0-9]{8})$/; 		(vd: 0371234567) (10 So)
+
+-- Ktra Email		  : re = /^[a-zA-Z0-9.\_\-]+@gmail.com$/; 	(vd: abc1@gmail.com)
+
+-- Ktra Chuoi ky tu in hoa: re = /^[A-Z][A-Z]+(\s[A-Z][A-Z]+)*$/; 	(vd: GO VAP)
+
+-- Ktra Ten dang nhap	  : re = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;	(vd: abc_cde)
+
+-- Ktra CMND		  : re = /^(2214[0-9]{5,})*$/;			(vd: 221467890) (9 So)
+
+-- Ktra password	  : re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; (vd: Xcvb1234)
+				(Toi thieu 8 ky tu, it nhat 1 ky tu in hoa va 1 so)
+	
