@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="m-5">
+    <header>
+        <h1  class="border border-dark m-0">
+            TUOI TRE ONLINE<br>
+            DANG KY MUA BAO ONLINE
+        </h1>
+    </header>
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 border border-dark p-0">
+                    <p class="border border-dark">left</p>
+                </div>
+                <div class="col-8 border border-dark">
+                    <form action="#">
+                        <div class="form-group">
+                            <p class="font-weight-bold">Dang ky bao</p>
+                            <input type="checkbox" name="datbao" id="ckb-hangngay" value="Tuoi tre hang ngay">Tuoi tre hang ngay
+                            <input type="checkbox" name="datbao" id="ckb-cuoi" value="Tuoi tre cuoi">Tuoi tre cuoi
+                            <input type="checkbox" name="datbao" id="ckb-chunhat" value="Tuoi tre chu nhat">Tuoi tre chu nhat
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Ky han</label>
+                            <select class="form-control" name="kyhan" id="kyhan">
+                                <option value="0" selected>Lua chon</option>
+                                <option value="1">3 thang</option>
+                                <option value="2">6 thang</option>
+                                <option value="3">1 nam</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Don gia</label>
+                            <input class="form-control" type="text" name="dongia" id="dongia" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Thong tin lien lac</label>
+                            <input class="form-control" type="text" name="thongtin" id="thongtin">
+                            <span class="text-danger" id="tbttll">(*)</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">So dien thoai</label>
+                            <input class="form-control" type="text" name="sdt" id="sdt">
+                            <span class="text-danger" id="tbsdt">(*)</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Dia chi nhan bao</label>
+                            <input class="form-control" type="text" name="diachi" id="diachi">
+                            <span class="text-danger" id="tbdiachi">(*)</span>
+                        </div>
+                        <div class="form-group">
+                            <p class="font-weight-bold">Hinh thuc thanh toan</p>
+                            <input type="radio" name="thanhtoan" value="Chuyen khoan" id="chuyenkhoan">chuyen khoan
+                            <input type="radio" name="thanhtoan" value="Tien mat" id="tienmat">Tien mat
+                        </div>
+                        <a href="###" class="btn btn-info" id="btndatbao">Dat bao</a>
+                    </form>
+
+                    <table class="table mt-3" id="table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Dat bao</th>
+                                <th>Ky han</th>
+                                <th>Thong tin lien lac</th>
+                                <th>Dia chi nhan bao</th>
+                                <th>Tong thanh toan</th>
+                                <th>Hinh thuc thanh toan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

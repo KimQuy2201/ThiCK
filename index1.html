@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index1.js"></script>
+</head>
+<body>
+    <div class="container-fluid p-0 ">
+        <header class="mb-4">
+            <div class="row m-0 p-0">
+                <div class="col-lg-4 text-center p-0">
+                    <img src="./img/logo.png" alt="" width="45%">
+                </div>
+                <div class="col-lg-8 p-0">
+                    <img src="./img/header1.png" alt="" width="100%" >
+                </div>
+            </div>
+            <div class="row m-0" style="background-color: #a6f0cb;">
+                <nav class="navbar navbar-collapse m-2">
+                    <ul class="nav nav-pills">
+                        <li><a href="#" class="nav-link">Trang chủ</a></li>
+                        <li><a href="#" class="nav-link">Tổ chức</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Đăng ký đặt chỗ</a>
+                            <ul class="dropdown-menu">
+                                <li data-toggle="modal" data-target="#myModal" ><a href="#" class="dropdown-item"  id ="openModal">From đặt chỗ</a></li>
+                            </ul> 
+                        </li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+        <div class="row content m-0">
+            <div class="col-lg-9 p-0">   
+                <table class="table border-bottom" id="table">
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>Điện thoại</th>
+                        <th>Giờ nhận tiệc</th>
+                        <th>Số người</th>
+                        <th>Loại tiệc</th>
+                        <th>Loại phòng</th>
+                        <th>Thành viên</th>
+                        <th>Dịch vụ đính kèm</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </table>
+             
+            </div>
+            <div class="col-lg-3 " style="background-color: #a6f0cb;">
+                <div class="my-3">
+                    <h3>Đặt chỗ</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Nhóm gia đình</a></li>
+                        <li class="list-group-item"><a href="#">Tiệc sinh nhật</a></li>
+                        <li class="list-group-item"><a href="#">Nhóm văn phòng</a></li>
+                    </ul>
+                </div>
+                <div class="my-3">
+                    <h3>Contact</h3>
+                    <div>
+                        <p class="ml-3">Gọi tới: 1900 6005 - Để đặt chỗ và được tư vấn</p>
+                        <p class="ml-3">Địa chỉ: 13 Trần Bình Trọng - Quận 1- TP.HCM</p>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <h3>Bài viết nổi bật</h3>
+                    <ol type="1" class="ml-3">
+                        <li>Kinh nghiệm tổ chức sinh nhật cho bé</li>
+                        <li>Đặc sản các miền</li>
+                        <li>Văn hóa ẩm thực sài gòn</li>
+                    </ol>
+                </div>
+                  
+            </div>
+        </div>
+        <footer class="p-2" style="background-color: #a6f0cb">
+            <span style="color: red;">@Copyright: Food Circle</span>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Thông tin đặt tiệc</h1>
+                    <hr>
+                </div>
+                <div class="modal-body">    
+                    <form action="#">
+                        <div  class="form-group">
+                            <label class=" font-weight-bold">Họ tên người đặt tiệc: </label><span class="text-danger" id="tbhoten"> * </span>
+                            <input type="text" class="form-control" placeholder="Họ tên" id="txthoten">  
+                        </div>
+                        <div  class="form-group">
+                            <label class=" font-weight-bold">Điện thoại liên hệ: </label><span class="text-danger" id="tbphone"> * </span>
+                            <input type="text" class="form-control" placeholder="Điện thoại" id="txtphone">  
+                        </div>
+                        <div  class="form-group">
+                            <label class=" font-weight-bold">Ngày nhận tiệc: </label><span class="text-danger" id="tbdate"> *</span>
+                            <input type="date" class="form-control" id="txtdate">  
+                        </div>
+                        <div  class="form-group">
+                            <label class=" font-weight-bold">Giờ nhận tiệc: </label><span class="text-danger" id="tbtime"> * </span>
+                            <input type="time" class="form-control" id="txttime">  
+                        </div>
+                        <div  class="form-group">
+                            <label class=" font-weight-bold">Số người: </label><span class="text-danger" id="tbsonguoi"> * </span>
+                            <input type="number" class="form-control" id="txtsonguoi">  
+                        </div>
+                        <div  class="form-group">
+                            <label class=" font-weight-bold">Loại tiệc: </label><span class="text-danger" id="tbloaitiec"> * </span>
+                            <select name="loaitiec" id="txtloaitiec" class="form-control">
+                                <option value="1">Set Menu</option>
+                                <option value="2">Buffet</option>
+                                <option value="3" selected>Finger Food</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Loại phòng: </label><span class="text-danger" id="tbloaitiec"> * </span>
+                            <input type="radio" name="loai" id="vip">VIP
+                            <input type="radio" name="loai" id="thuong">Thường
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Dịch vụ đi kèm: </label><span class="text-danger" id="tbloaitiec"> * </span>
+                            <input type="checkbox" id="">Nhân viên phục vụ riêng
+                            <input type="checkbox" id="">Hoa tươi
+                        </div>
+                        <div class="form-group">       
+                            <label for="" class="font-weight-bold">Thành viên</label>
+                            <input type="checkbox" name="" id="" value="thanhvien">
+                            <label for="thanhvien" style="color:steelblue;"><i>Nếu bạn là thành viên của quán</i></label>
+                        </div>
+                        <div class="form-group">       
+                            <label for="" class="font-weight-bold">Ghi chú</label>
+                            <textarea class="form-control" name="" id="" rows="5" placeholder="Không gian thoáng mát"></textarea>
+                        </div>
+                        <button class="btn btn-success w-100" id="btnSave">Lưu</button>
+                        <hr>
+                        <p class="text-right" style="color: red; font-size: 20px;">Hot line: 19006005</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

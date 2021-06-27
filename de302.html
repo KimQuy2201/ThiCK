@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/de302.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div>
+                <img class="w-100" src="./img/203574326_2963227000586989_949106989861908421_n.png" alt="">
+            </div>
+            <div class="navbar navbar-collapse">
+                <ul class="nav  nav-pills">
+                    <li><a class="nav-link" href="#">Đăng nhập</a></li>
+                    <li><a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Đăng ký</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class=" content">
+            <P class="text-center" style="font-size: 40px;">
+                DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIÊN<BR>
+                    TRƯỜNG ĐHCN THÀNH PHỐ HỒ CHÍ MINH
+            </P>
+            <table class="table table-light border-bottom" type="table" id="table">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>SCMND cũ</th>
+                    <th>Quê quán</th>
+                    <th>Email</th>
+                    <th>Điện thoại</th>
+                    <th>Ảnh đại diện</th>
+                </tr>
+            </table>
+            <div class="my-5">
+                <p class="text-center">SVTH:.......Mã Sinh Viên:..................Lớp:.....................</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>THÔNG TIN CÁ NHÂN</h2>
+                        <hr>
+                    </div>
+                    <div class="modal-body"> 
+                        <form action="" role="">
+                            <div class="form-group d-flex row">
+                                <div class="col-3 text-right p-0">
+                                    <label class="p-2"  for="" id="">Họ tên</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" type="text" name="" id="txtName" placeholder="Nhập họ tên">
+                                    <span class="text-danger" id="tbName">*</span>
+                                </div>
+                            </div>
+    
+                            <div class="form-group d-flex row">
+                                <div class="col-3 text-right p-0">
+                                    <label class="p-2" for="" id="">SCMND cũ</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" type="text" name="" id="txtCMND" placeholder="Nhập SCMND cũ">
+                                    <span class="text-danger" id="tbCMND">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex row">
+                                <div class="col-3 text-right p-0">
+                                    <label class="p-2" for="" id="">Quê quán</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" type="text" name="" id="txtquequan" placeholder="Nhập tỉnh của bạn">
+                                    <span class="text-danger" id="tbquequan">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex row">
+                                <div class="col-3 text-right p-0">
+                                    <label class="p-2" for="" id="">Email</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" type="text" name="" id="txtemail" placeholder="Nhập Email của bạn">
+                                    <span class="text-danger" id="tbemail">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex row">
+                                <div class="col-3 text-right p-0">
+                                    <label class="p-2" for="" id="">Số điện thoại</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" type="text" name="" id="txtphone" placeholder="XXXX-XXX-XXX">
+                                    <span class="text-danger" id="tbphone">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex row">
+                                <div class="col-3 text-right p-0">
+                                    <label class="p-2" for="" id="">Ảnh đại diện</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control" type="file" name="" id="pic" placeholder="No file chosen">
+                                    <span class="text-danger" id="tbpic">*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <hr>
+                            <button type="button" id="btnSave" class="btn btn-success w-100">Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
